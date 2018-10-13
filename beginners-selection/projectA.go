@@ -12,7 +12,7 @@ func main() {
 	j, k := ReadNewIntDelimitedSpace()
 	total := i + j + k
 	s := ReadNewLine()
-	fmt.Printf("%d %s\n", total, s)
+	fmt.Println(strconv.Itoa(total) + " " + s)
 }
 
 func ReadNewInt() int {
