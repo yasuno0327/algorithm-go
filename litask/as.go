@@ -10,7 +10,6 @@ import (
 func main() {
 	n := new(big.Int)
 	nString := os.Args[1]
-	ex2(nString)
 	n, _ = n.SetString(os.Args[1], 10)
 	mString := os.Args[2]
 	m, _ := strconv.ParseInt(mString, 10, 64)
@@ -19,14 +18,6 @@ func main() {
 	mRes := factorial(m)
 
 	printLargest(nRes, mRes)
-}
-
-func ex2(n string) {
-	length := len(n)
-	for _, v := range n {
-		i := string(v)
-		length--
-	}
 }
 
 func printLargest(n *big.Int, m *big.Int) {
